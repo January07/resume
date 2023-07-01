@@ -3,12 +3,12 @@ import { ref, onMounted } from 'vue'
 import Divider from './Divider.vue'
 
 const items = ref([
-  {
-    year: '2013 - 2014',
-    heading: 'National Chiayi University',
-    subheading: 'Applied Mathematics',
-    body: 'I learned HTML, CSS and JavaScript here, and became interested in programming. At this time, I don\'t know how to use frameworks, or even their existence. In order to learn programming better, I took the transfer exam during the summer vacation.'
-  },
+  // {
+  //   year: '2013 - 2014',
+  //   heading: 'National Chiayi University',
+  //   subheading: 'Applied Mathematics',
+  //   body: 'I learned HTML, CSS and JavaScript here, and became interested in programming. At this time, I don\'t know how to use frameworks, or even their existence. In order to learn programming better, I took the transfer exam during the summer vacation.'
+  // },
   {
     year: '2014 - 2017',
     heading: 'National Chung Hsing University',
@@ -28,10 +28,16 @@ const items = ref([
     body: 'This is where my technology has really advanced by leaps and bounds. I used a lot of front-end and back-end technologies here, not only for website development, but also for the company\'s Android App. I feel that I have a deeper understanding of programming.'
   },
   {
-    year: '2021 - Present',
+    year: '2021 - 2023',
     heading: 'Front-End Developer',
     subheading: 'NTT DATA Taiwan Co., LTD.',
     body: 'I mainly use the Vue.js framework for front-end development here, but because it is a product of a consulting company, it is inconvenient to show it in later projects. The biggest takeaway here is that it\'s fun to work with different back-end developers.'
+  },
+  {
+    year: '2023 - Present',
+    heading: 'System Engineer',
+    subheading: 'FENG CAI LTD.',
+    body: 'I am using Angular framework as front end and Java language as back end in this company. Life here is very pleasant, my colleagues are all outgoing and lively people, and the level of programmers here is also very high, so I have to work harder.'
   }
 ])
 
@@ -71,10 +77,10 @@ onMounted(() => {
       <ul class="timeline">
         <li v-for="(item, index) in items" v-bind:class="[index % 2 === 0 ? '' : 'timeline-panel-right']">
           <div class="timeline-image">
-            <img class="rounded-circle img-fluid" v-if="index === 0" src="/src/assets/images/about/01.png" alt="01.png">
-            <img class="rounded-circle img-fluid" v-if="index === 1" src="/src/assets/images/about/02.png" alt="02.png">
-            <img class="rounded-circle img-fluid" v-if="index === 2" src="/src/assets/images/about/04.png" alt="04.png">
-            <img class="rounded-circle img-fluid" v-if="index === 3" src="/src/assets/images/about/05.png" alt="05.png">
+            <img class="rounded-circle img-fluid" v-if="index === 0" src="/src/assets/images/about/02.png" alt="02.png">
+            <img class="rounded-circle img-fluid" v-if="index === 1" src="/src/assets/images/about/04.png" alt="04.png">
+            <img class="rounded-circle img-fluid" v-if="index === 2" src="/src/assets/images/about/05.png" alt="05.png">
+            <img class="rounded-circle img-fluid" v-if="index === 3" src="/src/assets/images/about/06.png" alt="06.png">
           </div>
           <div class="timeline-panel">
             <div>
